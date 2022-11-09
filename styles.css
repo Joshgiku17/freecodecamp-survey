@@ -1,0 +1,147 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+}
+body{
+    background: url(https://images.pexels.com/photos/6476256/pexels-photo-6476256.jpeg?cs=srgb&dl=pexels-mikael-blomkvist-6476256.jpg&fm=jpg&_gl=1*1eqy2iv*_ga*NjAyNDA3NzE4LjE2Njc4MTQ2Mjg.*_ga_8JE65Q40S6*MTY2Nzk3ODMwOC4zLjEuMTY2Nzk3ODQ2Ni4wLjAuMA..);
+    background-size: cover;
+    background-blend-mode:screen;
+    background-blend-mode:soft-light;
+    background-color: rgb(88, 9, 127);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.intro{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    font-weight: 700;
+}
+#description{
+    font-style: italic;
+    
+}
+#survey-form{
+    width: 50%;
+
+    margin: auto;
+    background-color: rgba(00, 00, 00,0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+}
+#survey-form input[type='text'], #survey-form input[type='email'],  #survey-form input[type='number'], #survey-form select{
+    border-radius: 5px;
+    outline: none;
+    border: 0px;
+    padding:10px;
+    font-size: 16px;
+    color:black;
+}
+#dropdown{
+    /* background: green; */
+    color:rgb(85, 85, 85);
+}
+#dropdown option{
+    /* color: black; */
+    color: black;
+    background-color: rgba(251, 251, 251, 0.123);
+    outline: none;
+    border: 0px;
+}
+
+#name input[type='radio']{
+    margin-bottom: 15px;
+} 
+
+.smltxt{
+    font-size: 13px;
+}
+.checkbox{
+    margin-bottom: 15px;
+}
+#txtarea{
+    margin-top: 10px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    padding: 10px;
+    
+}
+#submit{
+    margin-top: 20px;
+    background-color: #37af65;
+    border: 0px;
+    outline: none;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.addons{
+    display: flex;
+    flex-direction:column;
+}
+
+/* small phones */
+@media screen and (min-width:320px) and (max-width:1023px) {
+    /* body{
+        background-color: blueviolet;
+    } */
+    .intro{
+        margin-top: 20px;
+        
+    }
+    #title{
+        font-size: 15px;
+    }
+    #description{
+        font-size: 8px;
+    }
+
+    #survey-form{
+        width: 80%;
+        font-size: 10px;
+        
+    }
+    #survey-form input[type='text'], #survey-form input[type='email'],  #survey-form input[type='number'], #survey-form select{
+        border-radius: 3px;
+        outline: none;
+        border: 0px;
+        padding:5px;
+        font-size: 10px;
+    }
+    .smltxt{
+        font-size: 8px;
+    }
+    #txtarea{
+       font-size: 10px; 
+       height: 50px;
+    }
+    #submit{
+        font-size: 10px;
+        padding: 3px;
+        margin-top: 5px;
+    }
+
+}
+
+/* big screens */
+@media screen and (min-width:1390px){
+    #survey-form{
+        width:45%;
+    }
+}
